@@ -1,6 +1,6 @@
 {
   "name": "mcp-skills-plugins",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Claude Code plugins generated from MCP servers using mcp2rest. Each plugin provides agents and skills for interacting with MCP tools.",
   "owner": {
     "name": "ulasbilgen"
@@ -10,6 +10,11 @@
       "name": "chrome-devtools-plugin",
       "source": "./chrome-devtools-plugin",
       "description": "Browser automation via Chrome DevTools Protocol. Control Chrome programmatically, interact with pages, debug applications, and analyze performance using mcp2rest."
+    },
+    {
+      "name": "figma-desktop-plugin",
+      "source": "./figma-desktop-plugin",
+      "description": "Design-to-code automation via Figma Desktop. Extract UI code, design tokens, and screenshots from Figma files using mcp2rest integration."
     }
   ]
 }

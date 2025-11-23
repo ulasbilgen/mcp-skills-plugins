@@ -73,7 +73,39 @@ Automate Chrome browser tasks, test web applications, debug frontend issues, and
 
 ---
 
-*More plugins coming soon!*
+### figma-desktop-plugin v0.5.0
+
+**Design-to-code automation via Figma Desktop**
+
+Extract UI code, design tokens, and screenshots directly from Figma Desktop. Convert Figma designs to production-ready React, Vue, or HTML/CSS code.
+
+- **MCP Server**: Figma Desktop (built-in MCP server, HTTP transport)
+- **Tools**: 6 design-to-code tools
+- **Agent**: figma-desktop (auto-loads skill documentation)
+
+**Install:**
+```bash
+/plugin install figma-desktop-plugin@mcp-skills-plugins
+```
+
+**Features:**
+- 🎨 **Design Extraction**: Generate React/Vue/HTML code from Figma components
+- 🎯 **Design Tokens**: Extract color palettes, typography, spacing variables
+- 📸 **Screenshots**: Capture component visuals for documentation
+- 📐 **Structure Analysis**: Get page/component metadata and hierarchy
+- 📚 **Design Systems**: Generate design system guidelines and rules
+- 🎭 **FigJam Support**: Extract content from FigJam boards
+
+**Use Cases:**
+- Design-to-code conversion workflows
+- Design system token extraction
+- Component library documentation
+- Visual regression testing assets
+- Automated design specification generation
+
+**Documentation**: [figma-desktop-plugin/README.md](./figma-desktop-plugin/README.md)
+
+---
 
 ## How It Works
 

@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2025-11-23
+
+### Added
+- **Second plugin**: figma-desktop-plugin v0.5.0
+  - Design-to-code automation via Figma Desktop with 6 tools
+  - MCP server: Figma Desktop (built-in HTTP-based MCP server)
+  - Tools: get_design_context, get_variable_defs, get_screenshot, get_metadata, create_design_system_rules, get_figjam
+  - Extract React/Vue/HTML code from Figma components with framework context
+  - Design system token extraction (colors, typography, spacing)
+  - Component screenshot capture for documentation
+  - FigJam board content extraction
+  - Comprehensive figma-desktop agent with auto-loaded skill documentation
+  - Complete skill documentation with realistic workflows and examples
+
+### Changed
+- **Updated m2s commands** from upstream mcp2skill-tools repository
+  - `/m2s:generate` - Now displays MCP server version when available (e.g., "chrome-devtools (v0.10.2)")
+  - `/m2s:list` - Shows server versions in output for better version tracking
+  - Improved version awareness for MCP server integrations
+- **marketplace.json** - Added figma-desktop-plugin entry
+- **README.md** - Added figma-desktop-plugin to Available Plugins section
+
 ## [0.1.1] - 2025-11-23
 
 ### Added
