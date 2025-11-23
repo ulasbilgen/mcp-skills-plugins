@@ -79,11 +79,11 @@ We welcome contributions! To add a new plugin from an MCP server:
 
 ## Development
 
-This repository uses:
+This repository includes:
 
-- **Git submodules** for [mcp2skill-tools](https://github.com/ulasbilgen/mcp2skill-tools) integration
-- **Symlinked commands** to stay in sync with latest mcp2skill tooling
+- **m2s commands** from [mcp2skill-tools](https://github.com/ulasbilgen/mcp2skill-tools) for generating skills
 - **Custom `/skill2plugin` command** to streamline plugin creation
+- **Validation scripts** to ensure plugin quality
 
 ## Related Projects
 

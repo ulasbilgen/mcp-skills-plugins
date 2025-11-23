@@ -39,15 +39,7 @@ git clone https://github.com/ulasbilgen/mcp-skills-plugins.git
 cd mcp-skills-plugins
 ```
 
-### 3. Update Submodules
-
-This repository uses git submodules for the mcp2skill-commands:
-
-```bash
-git submodule update --init --recursive
-```
-
-### 4. Configure and Start mcp2rest
+### 3. Configure and Start mcp2rest
 
 Start the mcp2rest server:
 
@@ -68,7 +60,7 @@ Verify your MCP server is loaded:
 mcp2rest list
 ```
 
-### 5. Generate Skills from MCP Server
+### 4. Generate Skills from MCP Server
 
 Start Claude Code from the repository root:
 
@@ -91,7 +83,7 @@ This will generate:
 - `SKILL.md` - Skill definition
 - `scripts/` - JavaScript wrappers for each MCP tool
 
-### 6. Create the Plugin
+### 5. Create the Plugin
 
 Use the custom skill2plugin command:
 
@@ -111,7 +103,7 @@ This command will:
 - Update `marketplace.json`
 - Create plugin documentation
 
-### 7. Review Generated Files
+### 6. Review Generated Files
 
 Check the generated plugin structure:
 
@@ -128,7 +120,7 @@ Check the generated plugin structure:
 └── README.md                 # Plugin documentation
 ```
 
-### 8. Test Your Plugin Locally
+### 7. Test Your Plugin Locally
 
 Add this marketplace locally to test:
 
@@ -148,7 +140,7 @@ Test the functionality:
 - Ensure mcp2rest integration is working
 - Check for any errors or issues
 
-### 9. Document Your Plugin
+### 8. Document Your Plugin
 
 Update your plugin's README.md with:
 - Clear description of what the plugin does
@@ -157,7 +149,7 @@ Update your plugin's README.md with:
 - Usage examples
 - Configuration requirements for the MCP server
 
-### 10. Submit a Pull Request
+### 9. Submit a Pull Request
 
 Once you've tested your plugin:
 
