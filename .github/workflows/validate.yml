@@ -1,0 +1,46 @@
+name: Validate Marketplace
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run validation
+        run: npm run validate
+
+      - name: List plugins
+        run: npm run list-plugins
+
+      - name: Check for required files
+        run: |
+          echo "Checking for required files..."
+          test -f .claude-plugin/marketplace.json || (echo "❌ marketplace.json missing" && exit 1)
+          test -f README.md || (echo "❌ README.md missing" && exit 1)
+          test -f CONTRIBUTING.md || (echo "❌ CONTRIBUTING.md missing" && exit 1)
+          test -f LICENSE || (echo "❌ LICENSE missing" && exit 1)
+          echo "✅ All required files present"
+
+      - name: Validate JSON syntax
+        run: |
+          echo "Validating JSON files..."
+          find . -name "*.json" -type f ! -path "*/node_modules/*" ! -path "*/.git/*" -exec sh -c 'echo "Checking {}..." && cat {} | jq empty' \;
+          echo "✅ All JSON files are valid"

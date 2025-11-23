@@ -1,0 +1,3 @@
+[submodule "mcp2skill-tools"]
+	path = mcp2skill-tools
+	url = https://github.com/ulasbilgen/mcp2skill-tools.git

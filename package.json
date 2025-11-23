@@ -1,0 +1,32 @@
+{
+  "name": "mcp-skills-plugins",
+  "version": "1.0.0",
+  "description": "Claude Code plugins marketplace for MCP server integrations",
+  "private": true,
+  "scripts": {
+    "validate": "node scripts/validate-marketplace.js",
+    "list-plugins": "node scripts/list-plugins.js",
+    "test": "npm run validate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulasbilgen/mcp-skills-plugins.git"
+  },
+  "keywords": [
+    "claude-code",
+    "mcp",
+    "plugins",
+    "marketplace",
+    "skills",
+    "agents"
+  ],
+  "author": "ulasbilgen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ulasbilgen/mcp-skills-plugins/issues"
+  },
+  "homepage": "https://github.com/ulasbilgen/mcp-skills-plugins#readme",
+  "devDependencies": {
+    "prettier": "^3.1.1"
+  }
+}
