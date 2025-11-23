@@ -1,6 +1,6 @@
 {
   "name": "mcp-skills-plugins",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Claude Code plugins marketplace for MCP server integrations",
   "private": true,
   "scripts": {

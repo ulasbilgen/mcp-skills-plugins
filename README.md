@@ -22,7 +22,7 @@ These plugins bridge MCP servers with Claude Code by:
 ### Install a Plugin
 
 ```bash
-/plugin install chrome-dev-tools-plugin@mcp-skills-plugins
+/plugin install chrome-devtools-plugin@mcp-skills-plugins
 ```
 
 or browse all plugins:
@@ -41,9 +41,39 @@ All plugins in this marketplace require:
 
 ## Available Plugins
 
-<!-- Plugins will be listed here as they are added -->
+### chrome-devtools-plugin v0.5.0
 
-*No plugins available yet. Coming soon: chrome-dev-tools-plugin and figma-desktop-plugin!*
+**Browser automation via Chrome DevTools Protocol**
+
+Automate Chrome browser tasks, test web applications, debug frontend issues, and analyze web performance.
+
+- **MCP Server**: chrome-devtools-mcp@1.0.2
+- **Tools**: 26 automation tools in 4 groups
+- **Agent**: chrome-devtools (auto-loads skill documentation)
+
+**Install:**
+```bash
+/plugin install chrome-devtools-plugin@mcp-skills-plugins
+```
+
+**Features:**
+- 🌐 **Page Management**: Navigate, create tabs, resize viewport
+- 🖱️ **Element Interaction**: Click, fill forms, drag-and-drop, keyboard input
+- 🐛 **Debugging**: Console logs, network monitoring, JavaScript execution
+- ⚡ **Performance**: Core Web Vitals, throttling, performance traces
+
+**Use Cases:**
+- Automated form submission and testing
+- Web scraping with dynamic content
+- Frontend debugging and error analysis
+- Performance testing and optimization
+- Visual regression testing
+
+**Documentation**: [chrome-devtools-plugin/README.md](./chrome-devtools-plugin/README.md)
+
+---
+
+*More plugins coming soon!*
 
 ## How It Works
 
